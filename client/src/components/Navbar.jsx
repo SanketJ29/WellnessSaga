@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
@@ -23,6 +23,9 @@ const Navbar = () => {
           <nav class="md:ml-auto md:mr-auto flex flex-wrap text-base justify-around">
             <a class="mr-5 hover:text-white">Home</a>
             <a class="mr-5 hover:text-white">Dashboard</a>
+            <Link to="/upload" className="mr-5 hover:text-white">
+        Upload Data
+      </Link>
           </nav>
           <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
             Login
