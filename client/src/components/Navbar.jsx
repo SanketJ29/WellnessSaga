@@ -1,53 +1,47 @@
-import { useState } from 'react';
-import { HiMenu, HiMenuAlt4} from 'react-icons/hi';
-import { AiOutlineClose } from 'react-icons/ai';
+import React from "react";
 
-const NavbarItem = ({ title, classProps }) => {
-    return (
-        <li className = {'mx-4 cursor-pointer ${classProps}'}>
-            {title}
-        </li>
-    )
-}
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
-    return (
-        <nav className="w-full flex md:justify-center justify-between items-center p-4">
-            <div className="md:flex-[0.5] flex-initial justify-center items-center">
-
-            </div>
-            <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-                {["Dashboard", "Payment", "Login", "Wallets"].map((item,index) => (
-                    <NavbarItem key={item+index} title={item}/>
-                ))}
-                <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-                    Login
-                </li>
-
-            </ul>
-            <div className="flex relative">
-                    {toggleMenu
-                        ? <AiOutlineClose fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(false)} />
-                        : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(true)}/>}
-                    {toggleMenu && (
-                        <ul
-                        className="z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
-                        flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
-                        >
-                            <li className='text-xl w-full my-2'>
-                                <AiOutlineClose onClick={() => setToggleMenu(false)}/>
-                            </li>
-                            {["Dashboard", "Payment", "Login", "Wallets"].map((item,index) => (
-                    <NavbarItem key={item+index} title={item} classProps="my-2 text-lg"/>
-                ))}
-                        </ul>
-                    )
-
-                    }
-            </div>
-
-        </nav>
-    );
-}
+  return (
+    <div>
+      <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">HCARE</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap text-base justify-around">
+            <a class="mr-5 hover:text-white">Home</a>
+            <a class="mr-5 hover:text-white">Dashboard</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+            Login
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-1"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+    </div>
+  );
+};
 
 export default Navbar;
