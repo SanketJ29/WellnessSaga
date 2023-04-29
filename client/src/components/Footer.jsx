@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const Footer = () => {
@@ -66,4 +67,12 @@ return (
 );
 };
 
+=======
+const Footer = () => {
+    return (
+        <h1>Footer</h1>
+    );
+}
+
+>>>>>>> 65eb323b0779d44167e21f28e35f60c91caada08
 export default Footer;

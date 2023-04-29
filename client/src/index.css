@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 * html {
@@ -79,6 +80,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+=======
+>>>>>>> 65eb323b0779d44167e21f28e35f60c91caada08
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
