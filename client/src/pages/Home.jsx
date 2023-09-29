@@ -1,19 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Showcase from "../components/Showcase";
-import Footer from "../components/Footer";
-import Transactions from "../components/Transactions";
-// import AuthContextProvider from './context/AuthContext';
-import { useContext } from "react";
+import Welcome from "../components/Welcome";
 
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <Showcase />
-      <Footer />
-      <Transactions/>
+      <Welcome />
     </div>
   );
 };
