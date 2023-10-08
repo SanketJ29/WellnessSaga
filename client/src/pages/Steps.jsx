@@ -9,7 +9,7 @@ const Steps = () => {
             <section class="text-gray-400 bg-gray-900 body-font min-h-screen">
   <div class="container px-5 py-5 mx-auto flex flex-wrap">
     <div class="flex flex-wrap w-full ml-10">
-      <div class="lg:w-3/5 md:w-1/2 md:pr-10 md:py-2">
+      <div class="lg:w-2/4 md:w-1/2 md:pr-10 md:py-1">
         <div class="flex relative pb-4">
           <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-2 bg-cyan-800 pointer-events-none ml-2"></div>
@@ -52,8 +52,9 @@ const Steps = () => {
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 md:w-1/2 object-cover object-center rounded-lg py-12 ml-auto mr-10">
-  <img src="https://www.linkpicture.com/q/b89fb9d3-150b-489e-915c-9c66ca8158ad.jpeg" alt="step" class="object-cover object-center rounded-lg" />
+      <div class="lg:max-w-2xl lg:w-full md:w-1/2 w-5/9 object-cover object-center rounded-lg py-10 ml-auto mr-10">
+  {/* <img src="https://www.linkpicture.com/q/b89fb9d3-150b-489e-915c-9c66ca8158ad.jpeg" alt="step" class="object-cover object-center rounded-lg" /> */}
+  <img src="https://www.linkpicture.com/q/heart-8154559_1280-removebg-prev.png" alt="step" class="object-cover object-center" />
 </div>
 
     </div>
