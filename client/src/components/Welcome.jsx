@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import { AiFillPlayCircle } from "react-icons/ai";
+import homeimg from "../assets/heart-2658206_1280.webp";
 
 const Welcome = () => {
   const [showInstallMetamaskMessage, setShowInstallMetamaskMessage] = useState(false);
@@ -43,7 +44,8 @@ const Welcome = () => {
         <div class="container mx-auto flex px-10 py-16 md:flex-row flex-col items-center">
           <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
 {/*             <img class="object-cover object-center rounded" alt="hero" src="https://www.linkpicture.com/q/49c669cb-55cc-4255-8a20-142c724a7012_1.jpeg"/> */}
-            <img class="object-cover object-center rounded" alt="hero" src="https://www.linkpicture.com/q/heart-2658206_1280.webp"/>
+            {/* <img class="object-cover object-center rounded" alt="hero" src="https://www.linkpicture.com/q/heart-2658206_1280.webp"/> */}
+            <img class="object-cover object-center rounded" alt="hero" src={homeimg}/>
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font text-6xl mb-12 font-medium text-cyan-400 font-mono">WELLNESS SAGA</h1>
