@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Input from '../components/Input';
+import service2 from "../assets/5ea96f8d38467_Emergency.jpg"
 
 const Services = () => {
     return (
@@ -32,7 +33,8 @@ const Services = () => {
               <div class="bg-cyan-400 bg-opacity-20 p-5 rounded-lg">
                 <img
                   class="h-60 rounded w-full object-cover object-center mb-6"
-                  src="https://www.linkpicture.com/q/LPic650d5873b8939849857030.jpg"
+                  // src="https://www.linkpicture.com/q/LPic650d5873b8939849857030.jpg"
+                  src={service2}
                   alt="content"
                 />
                 <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font"></h3>
