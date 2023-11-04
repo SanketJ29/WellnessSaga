@@ -1,5 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import sanket from "../assets/profile_sanket_2.jpg";
+import gautam from "../assets/gautam_profile.jpg";
+import pushky from "../assets/pushky_profile.jpg";
+import swapnil from "../assets/swapnil_profile.jpg";
+
 const Team = () => {
     return(
         <div>
@@ -13,7 +18,7 @@ const Team = () => {
     <div class="flex flex-wrap -m-4">
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/Screenshot_2023-09-23-11-37-27-911_com.instagram.android.jpg"/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src={gautam} />
           <div class="w-full">
             <h2 class="title-font font-medium text-2.5xl text-cyan-400 mb-1 font-mono">Gautam Wadhwani</h2>
             <h3 class="text-1.5xl mb-3 font-mono">Leader/Developer</h3>
@@ -30,7 +35,7 @@ const Team = () => {
       </div>
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src="https://www.linkpicture.com/q/Picsart_22-09-18_21-25-05-453_2.jpg"/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src={sanket} />
           <div class="w-full">
             <h2 class="title-font font-medium text-2.5xl text-cyan-400 mb-1 font-mono">Sanket Jaiswal</h2>
             <h3 class="text-1.5xl mb-3 font-mono">Developer</h3>
@@ -48,7 +53,7 @@ const Team = () => {
       </div>
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src="https://www.linkpicture.com/q/push_linkpic.jpeg"/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src={pushky} />
           <div class="w-full">
             <h2 class="title-font font-medium text-2.5xl text-cyan-400 mb-1 font-mono">Pushkaraj Baradkar</h2>
             <h3 class="text-1.5xl mb-3 font-mono">Developer</h3>
@@ -66,7 +71,7 @@ const Team = () => {
       </div>
       <div class="p-4 lg:w-1/4 md:w-1/2">
       <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src="https://www.linkpicture.com/q/IMG-20230427-WA0004-2.jpg"/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-5" src={swapnil} />
           <div class="w-full">
             <h2 class="title-font font-medium text-2.5xl text-cyan-400 mb-1 font-mono">Swapnil Sakpal</h2>
             <h3 class="text-1.5xl mb-3 font-mono">Developer</h3>
