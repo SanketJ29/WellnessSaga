@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import logoimg from "../assets/Screenshot_2023-09-22_233749-removebg-preview.png";
+
 const Navbar = () => {
   return (
     <div>
       <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-            <img src="https://www.linkpicture.com/q/Screenshot_2023-09-22_233749-removebg-preview.png" width="24" height="24" className="w-14 h-10"/>
+            {/* <img src="https://www.linkpicture.com/q/Screenshot_2023-09-22_233749-removebg-preview.png" width="24" height="24" className="w-14 h-10"/> */}
+            <img src={logoimg} width="24" height="24" className="w-14 h-10"/>
               <span class="ml-3 text-3xl text-cyan-400 font-mono">AKATSUKI</span>
           </a>
           <nav class="md:ml-auto items-center flex flex-wrap text-base justify-around">
