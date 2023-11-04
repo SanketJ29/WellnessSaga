@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
+import stepsimg from "../assets/heart-8154559_1280-removebg-prev.png";
 
 const Steps = () => {
     return (
@@ -54,7 +55,8 @@ const Steps = () => {
       </div>
       <div class="lg:max-w-2xl lg:w-full md:w-1/2 w-5/9 object-cover object-center rounded-lg py-10 ml-auto mr-10">
   {/* <img src="https://www.linkpicture.com/q/b89fb9d3-150b-489e-915c-9c66ca8158ad.jpeg" alt="step" class="object-cover object-center rounded-lg" /> */}
-  <img src="https://www.linkpicture.com/q/heart-8154559_1280-removebg-prev.png" alt="step" class="object-cover object-center" />
+  {/* <img src="https://www.linkpicture.com/q/heart-8154559_1280-removebg-prev.png" alt="step" class="object-cover object-center" /> */}
+  <img src={stepsimg} alt="step" class="object-cover object-center" />
 </div>
 
     </div>
